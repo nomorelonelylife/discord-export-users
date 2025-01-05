@@ -1,17 +1,17 @@
 # Export Discord Users
-Generate a CSV of all Discord members in a server and the date they joined.
+Generate a CSV of all Discord members in a server and the date they joined. Generate a CSV of all members of certain role
 
 ## Run Locally
 Clone the project
 
 ```bash
-git clone https://github.com/gskril/discord-export-users.git
+git clone https://github.com/idkravitz/discord-export-users.git
 ```
 
 Go to the project directory
 
 ```bash
-cd discord-bot
+cd discord-export-users
 ```
 
 Install dependencies
@@ -23,6 +23,12 @@ npm install
 After creating an application with Discord (read below), start the bot
 
 ```bash
+npm run ts-start
+```
+
+or 
+```bash
+npm run build
 npm start
 ```
 
@@ -34,4 +40,5 @@ npm start
 
 ## How to Use
 - Send a message that says "/members" to any channel (suggested in private channel first for testing)
+- Send a message that says "/rolemembers" to any channel (suggested in private channel first for testing)
 - Only server members with admin permissions can use this function
